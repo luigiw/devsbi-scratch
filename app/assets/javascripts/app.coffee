@@ -1,0 +1,2 @@
+devsbi = angular.module('devsbi',[
+])
