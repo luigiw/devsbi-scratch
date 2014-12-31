@@ -1,7 +1,7 @@
 devsbi = angular.module('devsbi',[
   'templates',
   'ngRoute',
-  'controllers',
+  'devsbiControllers',
 ])
 
 devsbi.config([ '$routeProvider',
