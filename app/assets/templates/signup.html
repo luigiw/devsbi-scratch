@@ -1,0 +1,12 @@
+<p>Sign up</p>
+
+<form ua-signup>
+    <input name="login" placeholder="User Id"><br>
+    <input name="first_name" placeholder="First name"><br>
+    <input name="password" placeholder="Password" type="password"><br>
+    <button type="submit">Create Account</button>
+	
+    <p ng-show="error">{{ error.message }}</p>
+</form>
+
+<a href="#/login">Log in</a>

@@ -1,13 +1,10 @@
-<p>index.html under app</p>
 <div class="panel panel-sucess">
-  <div class="panel-heading">
-    <h1 ng-if="name">Hello, {{name}}</h1>
-  </div>
   <div class="panel-body">
-    <form class="form-inline">
-      <div class="form-group">
-        <input class="form-control" type="text" placeholder="Enter your name" autofocus ng-model="name">
-       </div>
-    </form>
+    <ul class="menu">
+        <li ng-show="!user.authenticated"><a href="#/login">log in</a></li>
+        <li ng-show="!user.authenticated"><a href="#/signup">sign up</a></li>
+        <li ng-show="user.authenticated"><a href="#/home">home</a></li>
+        <li ng-show="user.authenticated"><a href="#" ua-logout>log out</li>
+    </ul>
   </div>
 </div>

@@ -8,7 +8,7 @@ devsbi = angular.module('devsbi',[
 devsbi.config([ '$routeProvider',
   ($routeProvider)->
     $routeProvider
-      .when('/index',
+      .when('/',
         templateUrl: 'index.html'
         controller: 'IndexController'
         public: true
@@ -18,8 +18,11 @@ devsbi.config([ '$routeProvider',
         controller: 'HomeController'
       ).when('/login',
         templateUrl: 'login.html'
+        public: true
+        signup: true
       ).when('/signup',
         templateUrl: 'signup.html'
+        public: true
       ).otherwise(
         redirectTo: '/'
       )
