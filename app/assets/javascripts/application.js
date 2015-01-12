@@ -17,5 +17,6 @@
 //= require angular-rails-templates
 //= require userapp
 //= require userapp-angular
+//= require bootstrap/dropdown
 //= require_tree .
 //= require_tree ../templates
