@@ -40,3 +40,7 @@ devsbiControllers.controller('IndexController', [ '$scope',
   ($scope)->
 ])
 
+devsbiControllers.controller('HomeController', [ '$scope',
+  ($scope)->
+])
+
