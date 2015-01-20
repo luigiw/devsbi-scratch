@@ -1,3 +1,25 @@
+@import "constant";
+
 body.homepage {
-    background-color: #3B5998;
+    background-color: $themeBlue;
 }
+
+.navbar-default {
+  background-color: $themeBlue;
+  border-color: $themeBlue;
+}
+
+.btn-signup {
+  background-color: $themeBlue;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+  
+.btn-login {
+  background-color: white;
+  color: $themeBlue;
+  border-radius: 5px;
+  border: 1px solid $themeBlue;
+}
+
