@@ -1,12 +1,23 @@
-<p>Sign up</p>
 
-<form ua-signup>
-    <input name="login" placeholder="User Id"><br>
-    <input name="first_name" placeholder="First name"><br>
-    <input name="password" placeholder="Password" type="password"><br>
-    <button type="submit">Create Account</button>
-	
+<div class="container">
+  <div class="row">
+    <h1 class="text-center" style="color:white">Sign up</h1>
+    <form ua-signup class="form-signin">
+      <div class="form-group">
+        <input class="form-control" name="login" placeholder="User Id" />
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="first_name" placeholder="First name" />
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="password" placeholder="Password" type="password"><br>
+      <div>
+      <div class="row form-group col-md-12 col-md-offset-2">
+        <button class="btn btn-login col-md-4" type="submit">Sign up</button>
+        <p class="col-md-1">or</p>
+        <a class="col-md-4" href="#/login">Log in</a>
+      </div>	
     <p ng-show="error">{{ error.message }}</p>
-</form>
-
-<a href="#/login">Log in</a>
+    </form>
+  </div>
+</div>

@@ -4,6 +4,9 @@
     "angular": "latest",
     "angular-route": "latest",
     "bootstrap-sass-official": "latest",
-    "userapp-angular": "latest"
+    "userapp-angular": "latest",
+    "locationProvider": "latest"
+  },
+  "resolutions": {
   }
 }

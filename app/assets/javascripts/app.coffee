@@ -5,7 +5,7 @@ devsbi = angular.module('devsbi',[
   'devsbiControllers'
 ])
 
-devsbi.config([ '$routeProvider',
+devsbi.config([ '$routeProvider', 
   ($routeProvider)->
     $routeProvider
       .when('/',
@@ -18,13 +18,14 @@ devsbi.config([ '$routeProvider',
         controller: 'HomeController'
       ).when('/login',
         templateUrl: 'login.html'
+        controller: 'LoginController'
         public: true
         signup: true
       ).when('/signup',
         templateUrl: 'signup.html'
         public: true
       ).otherwise(
-        redirectTo: '/'
+        redirectTo: '/home'
       )
 ])
 .run(
@@ -36,8 +37,16 @@ devsbi.config([ '$routeProvider',
 
 
 devsbiControllers = angular.module('devsbiControllers', [])
-devsbiControllers.controller('IndexController', [ '$scope',
-  ($scope)->
+devsbiControllers.controller('IndexController', [ '$scope', '$location',
+  ($scope, $location)->
+    $scope.goto = (path)->
+      $location.path(path)
+])
+
+devsbiControllers.controller('LoginController', ['$scope', '$location',
+  ($scope, $location)->
+    $scope.login = ()->
+      document.getElementById("login").submit()
 ])
 
 devsbiControllers.controller('HomeController', [ '$scope',
